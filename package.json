@@ -7,7 +7,9 @@
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "ci:format": "prettier --check \"src/**/*.{ts,tsx}\"",
     "lint": "eslint src --ext .ts,.tsx",
-    "precommit": "npm run lint && npm run format && git add ."
+    "validate-branch": "validate-branch-name",
+    "precommit": "npm run format && npm run lint && git add .",
+    "prepush": "npm run lint && npm run validate-branch"
   },
   "eslintConfig": {
     "extends": [
@@ -28,11 +30,13 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "validate-branch-name": "^2.0.0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit"
+      "pre-commit": "npm run precommit",
+      "pre-push": "npm run prepush"
     }
   },
   "lint-staged": {
