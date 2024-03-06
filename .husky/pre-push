@@ -2,7 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # Проверка имени ветки
-npm run validate-branch-name
+npm run validate-branch
 
 # Проверка ESLint
 npm run lint
