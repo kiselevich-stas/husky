@@ -11,12 +11,6 @@
     "validate-branch": "validate-branch-name",
     "lint-staged": "lint-staged"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm exec --silent lint-staged",
-      "pre-push": "npm run lint && npm run validate-branch"
-    }
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
