@@ -1,3 +1,3 @@
 const Petya = 'zaza';
 
-console.log(Petya);
+console.log(Petya2222);
