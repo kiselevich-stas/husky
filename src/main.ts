@@ -1,4 +1,4 @@
-let a = 52;
+let a = 522;
 function baz() {
   return 'zalupa';
 }
