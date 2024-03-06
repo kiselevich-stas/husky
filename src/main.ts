@@ -1,5 +1,5 @@
 // Это ваш файл main.ts
-let Petya = 'zaza';
+let Petya22 = 'zaza';
 
 console.log(Petya2222);
 
